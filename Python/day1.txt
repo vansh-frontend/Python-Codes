@@ -1,0 +1,13 @@
+### Modules and PIP
+
+Modules: is like a library can be used to borrow the code written by somebody
+else in your python program
+
+2 types of Modules are:
+(1) built in - these are ready to import and use and ships with python
+interpreter. there is no need to install such modules explicity
+
+(2) external modules - these modules are imported from a third party file or can be 
+installed using package manager like pip or conda.since is written by someone else
+we can install diffrent version of a same module with the time.
+
