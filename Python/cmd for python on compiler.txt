@@ -1,0 +1,135 @@
+# 1. Check Python version
+python --version
+
+# 2. Start Python interpreter
+python
+
+# 3. Exit Python interpreter
+exit()
+
+# 4. Install a Python package
+pip install <package-name>
+
+# 5. Install a specific version of a package
+pip install <package-name>==<version>
+
+# 6. Upgrade a package to the latest version
+pip install --upgrade <package-name>
+
+# 7. Uninstall a Python package
+pip uninstall <package-name>
+
+# 8. List all installed packages
+pip list
+
+# 9. Freeze installed packages to requirements.txt
+pip freeze > requirements.txt
+
+# 10. Install packages from requirements.txt
+pip install -r requirements.txt
+
+# 11. Show detailed information about a package
+pip show <package-name>
+
+# 12. Check for outdated packages
+pip list --outdated
+
+# 13. Create a virtual environment
+python -m venv <env-name>
+
+# 14. Activate virtual environment (Windows)
+.\<env-name>\Scripts\activate
+
+# 15. Deactivate virtual environment
+deactivate
+
+# 16. Upgrade pip to the latest version
+pip install --upgrade pip
+
+# 17. Search for a package (deprecated in pip)
+pip search <package-name>
+
+# 18. Show all available Python modules
+help('modules')
+
+# 19. Import a package in Python
+import <package-name>
+
+# 20. Check the version of a package in Python
+import <package-name>
+print(<package-name>.__version__)
+
+# 21. Check if a package is installed in Python
+try:
+    import <package-name>
+    print("<package-name> is installed")
+except ImportError:
+    print("<package-name> is not installed")
+
+# 22. List all available methods of an imported package (e.g., pandas)
+dir(<package-name>)
+
+# 23. Display the Python environment variables
+import os
+print(os.environ)
+
+import pandas as pd
+print(pd.__version__) 
+
+# 24. Check if a specific module is available
+import sys
+print(sys.modules)
+
+# 25. Run a Python script from the command line
+python <script-name.py>
+
+# 26. Run a Python script in the background (without blocking terminal)
+python <script-name.py> &
+
+# 27. Generate a requirements.txt file (for sharing environments)
+pip freeze > requirements.txt
+
+# 28. Install from a local `.whl` or `.tar` file
+pip install <path-to-file>
+
+# 29. Create a virtual environment with a specific Python version (if available)
+python3.x -m venv <env-name>
+
+# 30. List installed Python environments (if using conda)
+conda list
+
+# 31. Install a package using conda (if using Anaconda)
+conda install <package-name>
+
+# 32. Update a package using conda (if using Anaconda)
+conda update <package-name>
+
+# 33. Create a conda environment
+conda create --name <env-name> python=3.x
+
+# 34. Activate conda environment
+conda activate <env-name>
+
+# 35. Deactivate conda environment
+conda deactivate
+
+# 36. Display the current conda environment
+conda info --envs
+
+# 37. Install Python 2.x and 3.x versions in a virtual environment
+conda install python=2.7
+conda install python=3.x
+
+# 38. Check installed package versions (with pip)
+pip show <package-name>
+
+# 39. Display the current Python environment path
+import sys
+print(sys.executable)
+
+# 40. Display the path to the current Python site-packages directory
+import site
+print(site.getsitepackages())
+
+# 41. Install a package with additional dependencies
+pip install <package-name>[extra1, extra2]
